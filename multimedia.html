@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multimedia</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Noto Sans', sans-serif;
+      background-image: url('workplace-5517755_1280.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 40px;
+      text-align: center;
+    }
+
+    video, audio {
+      display: none;
+    }
+
+    .media-container {
+      position: relative;
+      width: 90%;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .media-container video {
+      display: block;
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    nav {
+      margin-top: 30px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="media-container">
+    <video id="video" controls>
+      <source src="7657367-hd_1080_1920_25fps.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <audio id="audio">
+      <source src="office-ambience-24734.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="tables.html">Back: Tables</a> |
+    <a href="animations.html">Next: Animations</a>
+  </nav>
+
+  <script>
+    const video = document.getElementById('video');
+    const audio = document.getElementById('audio');
+
+    video.addEventListener('play', () => {
+      audio.currentTime = 0;
+      audio.play();
+    });
+
+    video.addEventListener('pause', () => {
+      audio.pause();
+    });
+
+    video.addEventListener('ended', () => {
+      audio.pause();
+      audio.currentTime = 0;
+    });
+  </script>
+</body>
+</html>

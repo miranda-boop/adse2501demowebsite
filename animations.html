@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Animations</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Noto Sans', sans-serif;
+      background-image: url('workplace-5517755_1280.jpg');
+      background-size: cover;
+      color: #fff;
+      padding: 40px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #ff4757;
+      margin: 50px auto;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes moveUp {
+      from { transform: translateY(0);
+     }
+    to {
+        transform:translateY(300px)
+    }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Animations</h1>
+  <p>This box below uses a simple CSS animation to bounce up and down.</p>
+  <div class="box"></div>
+
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="transitions.html">Next: Transitions</a>
+  </nav>
+</body>
+</html>

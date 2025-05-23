@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Transitions</title>
+  <style>
+    body {
+      font-family: 'Noto Sans', sans-serif;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .transition-box {
+      width: 150px;
+      height: 150px;
+      background-color: teal;
+      margin-top: 20px;
+      transition: transform 0.5s ease, background-color 0.5s ease;
+      cursor: pointer;
+    }
+
+    .active {
+      transform: scale(1.2);
+      background-color: tomato;
+    }
+
+    nav {
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #0077cc;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="animations.html">Animations</a>
+    <a href="transitions.html">Transitions</a>
+    <a href="transformations.html">Transformations</a>
+  </nav>
+
+  <h1>CSS Transitions</h1>
+  <p>Tap or click the box to see the transition effect:</p>
+  <div class="transition-box" onclick="this.classList.toggle('active')"></div>
+</body>
+</html>

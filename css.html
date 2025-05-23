@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS - ADS-E 205.1</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Noto Sans', sans-serif;
+      background-image: url('workplace-5517755_1280.jpg');
+      background-size: cover;
+      color: #fff;
+      padding: 20px;
+    }
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+    }
+    nav {
+      margin-bottom: 20px;
+    }
+    nav a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      margin: 5px 0;
+    }
+
+    /* ANIMATION EXAMPLE */
+    .animated-box {
+      width: 100px;
+      height: 100px;
+      background-color: #ff5f5f;
+      animation: bounce 2s infinite;
+      margin-bottom: 40px;
+    }
+    @keyframes bounce {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(-30px); }
+      100% { transform: translateY(0); }
+    }
+
+    /* TRANSITION EXAMPLE */
+    .transition-box {
+      width: 100px;
+      height: 100px;
+      background-color: #5fafff;
+      transition: transform 0.3s ease;
+      margin-bottom: 40px;
+    }
+    .transition-box:hover {
+      transform: scale(1.2);
+    }
+
+    /* TRANSFORMATION EXAMPLE */
+    .transform-box {
+      width: 100px;
+      height: 100px;
+      background-color: #7fff5f;
+      transform: rotate(20deg);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Demonstrations</h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="textformatting.html">Text Formatting</a>
+    <a href="lists.html">Lists</a>
+    <a href="links.html">Links</a>
+    <a href="images.html">Images</a>
+    <a href="css.html">CSS</a>
+    <a href="pagelayout.html">Page Layout</a>
+    <a href="forms.html">Forms</a>
+    <a href="tables.html">Tables</a>
+    <a href="multimedia.html">Multimedia</a>
+  </nav>
+
+  <h2>CSS Animation</h2>
+  <p>The box below demonstrates CSS animation using keyframes.</p>
+  <div class="animated-box"></div>
+
+  <h2>CSS Transition</h2>
+  <p>Hover over the box to see a smooth scale transition effect.</p>
+  <div class="transition-box"></div>
+
+  <h2>CSS Transformation</h2>
+  <p>The box below is rotated using the transform property.</p>
+  <div class="transform-box"></div>
+
+</body>
+</html>

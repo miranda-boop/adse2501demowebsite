@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tables</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Noto Sans', sans-serif;
+      background-image: url('workplace-5517755_1280.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 40px;
+      text-align: center;
+    }
+
+    table {
+      margin: auto;
+      border-collapse: collapse;
+      width: 90%;
+      max-width: 600px;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+    }
+
+    th {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    tr:nth-child(even) {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    nav {
+      margin-top: 30px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Student Grades Table</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Student Name</th>
+        <th>Subject</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Valentine</td>
+        <td>HTML & CSS</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>James</td>
+        <td>JavaScript</td>
+        <td>B+</td>
+      </tr>
+      <tr>
+        <td>Emily</td>
+        <td>Web Design</td>
+        <td>A-</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="lists.html">Back: Lists</a> |
+    <a href="multimedia.html">Next: Multimedia</a>
+  </nav>
+</body>
+</html>
